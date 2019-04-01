@@ -667,7 +667,6 @@ public class MyRestControllerToAndroid {
 
 
 
-
 	@RequestMapping(value = "deleRows", method = RequestMethod.GET)
 	public Object deleRows() {
 		serviceClassToRest.updaterows();

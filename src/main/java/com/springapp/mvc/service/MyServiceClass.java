@@ -120,18 +120,7 @@ public class MyServiceClass {
             return null;
         }
     }
-    public int maxCouriers() {
-        Criteria c = session.getCurrentSession().createCriteria(Courier.class);
-        c.addOrder(Order.desc("id"));
-        c.setMaxResults(1);
-        Courier news = (Courier) c.uniqueResult();
-        if(news!=null){
-            int id = news.getId();
-            return id;
-        }
-        return 0;
 
-    }
     public int maxCompanies() {
         Criteria c = session.getCurrentSession().createCriteria(Company.class);
         c.addOrder(Order.desc("id"));
@@ -543,7 +532,7 @@ public class MyServiceClass {
     }
 
     public boolean updateUndGroupMinus(int comp_id,int shop_id,float debt){
-        String sql = "UPDATE undgroups SET shopDebt = shopDebt - "+debt+" WHERE shops_id="+shop_id+"AND company_id="+comp_id;
+        String sql = "UPDATE undgroups SET shopDebt = shopDebt - "+debt+" WHERE shops_id="+shop_id+" AND company_id="+comp_id;
         SQLQuery sqlQuery =session.getCurrentSession().createSQLQuery(sql);
         sqlQuery.executeUpdate();
         return true;
@@ -593,7 +582,9 @@ public class MyServiceClass {
     }
 
     public boolean update_und_group(UndGroups undGroups){
-        session.getCurrentSession().update(undGroups);
+        String sql = "UPDATE undgroups set shopcons="+undGroups.isShopCons()+" where id="+undGroups.getId();
+        SQLQuery query = session.getCurrentSession().createSQLQuery(sql);
+        query.executeUpdate();
         return true;
     }
 
