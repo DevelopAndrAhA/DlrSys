@@ -696,8 +696,96 @@ public class HelloController {
 			List<Shops>shops = null;
 			if(undGroupsShopsId!=null&&undGroupsShopsId.size()!=0){
 				shops = myServiceClass.getAllShopsByGroupsUsId(1,undGroupsShopsId);
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(undGroupsShopsId);
+				int pages = sizeToPagination%30;
+				boolean pagesEnd = false;
+				if(pages!=0){
+					pagesEnd=true;
+				}
+
+				model.addAttribute("group_id", "1");
+				model.addAttribute("sizeToPagination", sizeToPagination/30);
+				model.addAttribute("pagesEnd", pagesEnd);
+				model.addAttribute("activePageNumber", 0);
+				model.addAttribute("group", true);
 			}else{
 				shops = myServiceClass.getAllShopsByGroupsUsId(1);
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(1);
+				int pages = sizeToPagination%30;
+				boolean pagesEnd = false;
+				if(pages!=0){
+					pagesEnd=true;
+				}
+
+				model.addAttribute("group_id", "1");
+				model.addAttribute("sizeToPagination", sizeToPagination/30);
+				model.addAttribute("pagesEnd", pagesEnd);
+				model.addAttribute("activePageNumber", 0);
+				model.addAttribute("group", false);
+			}
+
+			String group_usName = null;
+			if(shops!=null&&shops.size()!=0){
+				GroupsUs groupUs = myServiceClass.getGlobalGroupById(Integer.valueOf(1));
+				group_usName=groupUs.getName();
+			}else{
+				group_usName = "Все добавлены";
+			}
+			model.addAttribute("group_us", group_usName);
+			model.addAttribute("GroupsUs", groupsUs);
+			model.addAttribute("groups", groups);
+			model.addAttribute("shops", shops);
+			return "add_shops";
+		}catch (NullPointerException e){
+			return "sign_in";
+		}
+
+	}
+	@RequestMapping(value = "/add_shops_p",method = RequestMethod.GET)
+	public String add_shops_p(@RequestParam("page") String page,@RequestParam("group_id") String group_id, ModelMap model,HttpServletRequest httpServletRequest) {
+		HttpSession httpSession = httpServletRequest.getSession();
+		Company company = new Company();
+		Company2 company2 =(Company2) httpSession.getAttribute("company");
+		try {
+			company.setId(company2.getId());
+
+			List<Groups> groups = myServiceClass.getGroups(company);
+			List<GroupsUs> groupsUs = myServiceClass.getGlobalGroups();
+			List<UndGroups> undGroups = myServiceClass.getListUndGroups(company.getId());
+			List<Integer> undGroupsShopsId = new ArrayList<Integer>();
+			for(int i=0;i<undGroups.size();i++){
+				undGroupsShopsId.add(undGroups.get(i).getShops().getId());
+			}
+			List<Shops>shops = null;
+			if(undGroupsShopsId!=null&&undGroupsShopsId.size()!=0){
+				int first = Integer.valueOf(page)*30-30;
+				shops = myServiceClass.getAllShopsByGroupsUsId(Integer.valueOf(group_id),undGroupsShopsId,first);
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(Integer.valueOf(group_id),undGroupsShopsId);
+				int pages = sizeToPagination%30;
+				boolean pagesEnd = false;
+				if(pages!=0){
+					pagesEnd=true;
+				}
+
+				model.addAttribute("group_id", group_id);
+				model.addAttribute("sizeToPagination", sizeToPagination/30);
+				model.addAttribute("pagesEnd", pagesEnd);
+				model.addAttribute("activePageNumber", Integer.valueOf(page));
+				model.addAttribute("group", true);
+			}else{
+				shops = myServiceClass.getAllShopsByGroupsUsId(1);
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(1);
+				int pages = sizeToPagination%30;
+				boolean pagesEnd = false;
+				if(pages!=0){
+					pagesEnd=true;
+				}
+
+				model.addAttribute("group_id", group_id);
+				model.addAttribute("sizeToPagination", sizeToPagination/30);
+				model.addAttribute("pagesEnd", pagesEnd);
+				model.addAttribute("activePageNumber", Integer.valueOf(page));
+				model.addAttribute("group", false);
 			}
 
 			String group_usName = null;
@@ -734,9 +822,34 @@ public class HelloController {
 			}
 			List<Shops>shops = null;
 			if(undGroupsShopsId!=null&&undGroupsShopsId.size()!=0){
-				shops = myServiceClass.getAllShopsByGroupsUsId(Integer.valueOf(group_id),undGroupsShopsId);
+				int first = 1*30-30;
+				shops = myServiceClass.getAllShopsByGroupsUsId(Integer.valueOf(group_id),undGroupsShopsId,first);
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(Integer.valueOf(group_id),undGroupsShopsId);
+				int pages = sizeToPagination%30;
+				boolean pagesEnd = false;
+				if(pages!=0){
+					pagesEnd=true;
+				}
+
+				model.addAttribute("group_id", group_id);
+				model.addAttribute("sizeToPagination", sizeToPagination/30);
+				model.addAttribute("pagesEnd", pagesEnd);
+				model.addAttribute("activePageNumber", 0);
+				model.addAttribute("group", true);
 			}else{
-				shops = myServiceClass.getAllShopsByGroupsUsId(Integer.valueOf(group_id));
+				shops = myServiceClass.getAllShopsByGroupsUsId(1);
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(Integer.valueOf(group_id));
+				int pages = sizeToPagination%30;
+				boolean pagesEnd = false;
+				if(pages!=0){
+					pagesEnd=true;
+				}
+
+				model.addAttribute("group_id", group_id);
+				model.addAttribute("sizeToPagination", sizeToPagination/30);
+				model.addAttribute("pagesEnd", pagesEnd);
+				model.addAttribute("activePageNumber", 0);
+				model.addAttribute("group", false);
 			}
 			String group_usName = null;
 			if(shops!=null&&shops.size()!=0){

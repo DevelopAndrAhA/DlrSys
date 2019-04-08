@@ -419,7 +419,7 @@ public class MyServiceClass {
         );
         criteria.add(Restrictions.eq("shops.id", shopId));
         criteria.add(Restrictions.eq("company.id", compId));
-        criteria.setMaxResults(30);
+        criteria.setMaxResults(100);
         criteria.addOrder(Order.desc("id"));
         List<MyOrder> orders = criteria.list();
         return orders;
@@ -499,6 +499,26 @@ public class MyServiceClass {
        criteria.add(Restrictions.eq("company.id",companyId));
        List<UndGroups> groupses =(List<UndGroups>) criteria.list();
         return groupses;
+    }
+    public int getSizeToPaginationShops(List<Integer> undGroupsShopsId){
+        StringBuilder sql = new StringBuilder("SELECT id FROM shops WHERE shop_group_us_id=1 AND id NOT IN (");
+        for(int i=0;i<undGroupsShopsId.size();i++){
+            sql.append(""+undGroupsShopsId.get(i)+",");
+        }
+        sql.append("0)");
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery(sql.toString());
+        int size = sqlQuery.list().size();
+        return size;
+    }
+    public int getSizeToPaginationShops(int group_id,List<Integer> undGroupsShopsId){
+        StringBuilder sql = new StringBuilder("SELECT id FROM shops WHERE shop_group_us_id="+group_id+" and  id NOT IN (");
+        for(int i=0;i<undGroupsShopsId.size();i++){
+            sql.append(""+undGroupsShopsId.get(i)+",");
+        }
+        sql.append("0)");
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery(sql.toString());
+        int size = sqlQuery.list().size();
+        return size;
     }
     public Groups getGroupById(int groupId){
         Criteria criteria = session.getCurrentSession().createCriteria(Groups.class);
@@ -627,8 +647,8 @@ public class MyServiceClass {
 
 /*==================================SHOPS=========================================*/
 
-    public int getSizeToPaginationShops(Company company){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select id from shops where company_id="+company.getId()+" and shopdebt > 0");
+    public int getSizeToPaginationShops(int group_id){
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select id from shops where shop_group_us_id="+group_id);
         List l = sqlQuery.list();
         return l.size();
     }
@@ -636,17 +656,27 @@ public class MyServiceClass {
     public List<Shops> getAllShopsByGroupsUsId(int groupsUs){
         Criteria criteria = session.getCurrentSession().createCriteria(Shops.class);
         criteria.add(Restrictions.eq("groupsus.id", groupsUs));
+        criteria.setMaxResults(30);
         List<Shops> list = criteria.list();
         return list;
     }
     public List<Shops> getAllShopsByGroupsUsId(int groupsUs,List<Integer> shopsId){
         Criteria criteria = session.getCurrentSession().createCriteria(Shops.class);
         criteria.add(Restrictions.eq("groupsus.id", groupsUs));
+        criteria.setMaxResults(30);
         criteria.add(Restrictions.not(Restrictions.in("id",shopsId)));
         List<Shops> list = criteria.list();
         return list;
     }
-
+    public List<Shops> getAllShopsByGroupsUsId(int groupsUs,List<Integer> shopsId,int first){
+        Criteria criteria = session.getCurrentSession().createCriteria(Shops.class);
+        criteria.add(Restrictions.eq("groupsus.id", groupsUs));
+        criteria.setMaxResults(30);
+        criteria.setFirstResult(first);
+        criteria.add(Restrictions.not(Restrictions.in("id",shopsId)));
+        List<Shops> list = criteria.list();
+        return list;
+    }
     public Shops getShopByid(int shopId){
        Criteria criteria = session.getCurrentSession().createCriteria(Shops.class);
        criteria.add(Restrictions.eq("id",shopId));
@@ -951,8 +981,9 @@ public class MyServiceClass {
             shops.setLongitude("advsadv" + i);
             session.getCurrentSession().save(shops);
         }*/
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("UPDATE undgroups SET shopdebt = 0 where id between 100 and 200");
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("UPDATE shops SET shop_group_us_id = 3 where id between 100 and 200");
         sqlQuery.executeUpdate();
+
 
     }
 

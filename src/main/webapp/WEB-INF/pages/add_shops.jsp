@@ -34,6 +34,15 @@
 <body class="subpage">
 <jsp:include page="header_menu/add_shops_header.jsp"/>
 <%
+    ServletRequest ctx =  pageContext.getRequest();
+    String group_id = (String)ctx.getAttribute("group_id");
+    boolean pagesEnd  =(Boolean) ctx.getAttribute("pagesEnd");
+    int sizeToPagination  =(Integer) ctx.getAttribute("sizeToPagination");
+    int activePageNumber  =(Integer) ctx.getAttribute("activePageNumber");
+    boolean group = false;
+    try {
+        group  =(Boolean) ctx.getAttribute("group");
+    }catch (NullPointerException e){}
     String group_us = (String) pageContext.getRequest().getAttribute("group_us");
 %>
 <div>
@@ -101,6 +110,66 @@
 
     %>
         </TABLE>
+        <nav aria-label="...">
+            <ul class="pagination">
+                <%
+                    if(sizeToPagination!=0){
+                        String ulrPage = "add_shops_p";
+                        if(group){
+                            out.print("<script type='application/javascript'>var globUrl='"+ulrPage+"';var globGrId='"+group_id+"'</script>");
+                        }
+                        if(pagesEnd){
+                            sizeToPagination = sizeToPagination+1;
+                            for(int k=1;k<=sizeToPagination;k++){
+                                if(activePageNumber==k){
+                                    out.print("<li class='age-item active' \\>");
+                                    out.print("<a class=page-link href="+ulrPage+"?page="+k+"&group_id="+group_id+" tabindex=-1>"+k+"</a>");
+                                    out.print("</li>");
+                                }else{
+                                    out.print("<li class='age-item' \\>");
+                                    out.print("<a class=page-link href="+ulrPage+"?page="+k+"&group_id="+group_id+" tabindex=-1>"+k+"</a>");
+                                    out.print("</li>");
+                                }
+                            }
+                        }else{
+                            sizeToPagination = sizeToPagination+1;
+                            for(int k=1;k<sizeToPagination;k++){
+                                if(activePageNumber==k){
+                                    out.print("<li class='age-item active' \\>");
+                                    out.print("<a class=page-link href="+ulrPage+"?page="+k+"&group_id="+group_id+" tabindex=-1>"+k+"</a>");
+                                    out.print("</li>");
+                                }else{
+                                    out.print("<li class='age-item' \\>");
+                                    out.print("<a class=page-link href="+ulrPage+"?page="+k+"&group_id="+group_id+" tabindex=-1>"+k+"</a>");
+                                    out.print("</li>");
+                                }
+                            }
+                        }
+
+                        if(activePageNumber<sizeToPagination){
+                            int nextpage = activePageNumber+1;
+                            out.print("<li class='page-item' \\>");
+                            out.print("<a class=page-link href="+ulrPage+"?page="+nextpage+"&group_id="+group_id+" tabindex=-1>След.</a>");
+                            out.print("</li>");
+                        }else{
+
+                            out.print("<li class='page-item disabled' \\>");
+                            out.print("<a class=page-link href=# tabindex=-1>След.</a>");
+                            out.print("</li>");
+                        }
+
+                        out.print("<div class=col-lg-3>");
+                        out.print("<div class=input-group>");
+                        out.print("<input type=number class=form-control id=pageNum placeholder=№ />");
+                        out.print("<span class=input-group-btn>");
+                        out.print("<button class=btn btn-default id=getpage type=button>Вперед</button>");
+                        out.print("</span>");
+                        out.print("</div>");
+                        out.print("</div>");
+                    }
+                %>
+            </ul>
+        </nav>
     </div>
 </div>
 
@@ -131,6 +200,13 @@
                             alert("Ошибка!");
                         }
                     }}})
+        }
+
+    });
+    $('#getpage').click(function(){
+        var v = $("#pageNum").val();
+        if(v!=null&& v.length!=0){
+            window.location.href = globUrl+"?page="+v+"&group_id="+globGrId;
         }
 
     });
