@@ -33,10 +33,18 @@
     String groupName = (String)ctx.getAttribute("groupName");
     String group_id = (String)ctx.getAttribute("group_id");
     boolean statusAddingLink = (Boolean)ctx.getAttribute("statusAddingLink");
-
-    boolean pagesEnd  =(Boolean) ctx.getAttribute("pagesEnd");
-    int sizeToPagination  =(Integer) ctx.getAttribute("sizeToPagination");
-    int activePageNumber  =(Integer) ctx.getAttribute("activePageNumber");
+    boolean pagesEnd = false;
+    int sizeToPagination = 0;
+    int activePageNumber  = 0;
+    try {
+     pagesEnd  =(Boolean) ctx.getAttribute("pagesEnd");
+    }catch (NullPointerException e){}
+    try {
+     sizeToPagination  =(Integer) ctx.getAttribute("sizeToPagination");
+    }catch (NullPointerException e){}
+    try {
+     activePageNumber  =(Integer) ctx.getAttribute("activePageNumber");
+    }catch (NullPointerException e){}
     boolean group = false;
     try {
         group  =(Boolean) ctx.getAttribute("group");

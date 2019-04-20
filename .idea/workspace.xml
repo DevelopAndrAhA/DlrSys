@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c7c4ad-efd7-40e0-8f5b-dae41b691af8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/HelloController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/service/MyServiceClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/service/MyServiceClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/add_shops.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/add_shops.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/all_shops.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/all_shops.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -95,12 +93,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/history.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/new_orders.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/debt_shops.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/all_shops.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/rest_api/MyRestControllerToAndroid.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/add_shops.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/service/MyServiceClass.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/all_shops.jsp" />
       </list>
     </option>
   </component>
@@ -280,6 +278,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,10 +312,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dealer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dealer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -948,11 +964,14 @@
       <workItem from="1554299874231" duration="8834000" />
       <workItem from="1554381915581" duration="7928000" />
       <workItem from="1554731671564" duration="5648000" />
+      <workItem from="1555351548994" duration="907000" />
+      <workItem from="1555693306127" duration="1586000" />
+      <workItem from="1555748155781" duration="718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="806466000" />
+    <option name="totallyTimeSpent" value="809677000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -978,36 +997,36 @@
     <frame x="-6" y="-6" width="1652" height="997" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40016103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32189348" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1754386" sideWeight="0.49940827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50592417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30094787" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17606516" sideWeight="0.49940827" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18358396" sideWeight="0.5005917" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50592417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29660022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30011722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1071,7 +1090,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="650" />
+      <option name="time" value="651" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1227,13 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/SaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74626863" vertical-offset="1521" max-vertical-offset="2057">
-          <caret line="572" column="0" selection-start-line="572" selection-start-column="0" selection-end-line="572" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/model_for_users/Groups.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.2973761" vertical-offset="204" max-vertical-offset="1411">
@@ -1294,7 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14365672" vertical-offset="42" max-vertical-offset="578">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,7 +1377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19805825" vertical-offset="0" max-vertical-offset="561">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,16 +1408,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/add_shops.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="3298">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40619308" vertical-offset="2038" max-vertical-offset="2788">
+          <caret line="1052" column="132" selection-start-line="1052" selection-start-column="132" selection-end-line="1052" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3131313" vertical-offset="415" max-vertical-offset="1717">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/all_shops.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="1717" max-vertical-offset="3825">
-          <caret line="118" column="27" selection-start-line="118" selection-start-column="27" selection-end-line="119" selection-end-column="142" />
+        <state vertical-scroll-proportion="0.4490566" vertical-offset="391" max-vertical-offset="3961">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/service/MyServiceClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.014059754" vertical-offset="1709" max-vertical-offset="5049">
+          <caret line="413" column="68" selection-start-line="413" selection-start-column="68" selection-end-line="413" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/rest_api/MyRestControllerToAndroid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1720" max-vertical-offset="2805">
+        <state vertical-scroll-proportion="1.6205035" vertical-offset="1122" max-vertical-offset="2805">
           <caret line="670" column="67" selection-start-line="670" selection-start-column="67" selection-end-line="670" selection-end-column="67" />
           <folding>
             <element signature="method#signInShop#0;class#MyRestControllerToAndroid#0" expanded="false" />
@@ -1442,200 +1482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/add_shops.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/SaveController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="3298">
-          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-          <folding>
-            <element signature="e#8156#9085#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/service/MyServiceClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1502" max-vertical-offset="5049">
-          <caret line="413" column="68" selection-start-line="413" selection-start-column="68" selection-end-line="413" selection-end-column="68" />
-          <folding>
-            <element signature="method#save#5;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#save#7;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllCategories#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#userVerificationShop#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#userVerification#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#userVerification#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#userVerificationCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#maxCouriers#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#maxCompanies#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getLoginCompany#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getLoginCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getLoginShop#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#delCategory#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateCategory#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCategorybyId#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#delProduct#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateProduct#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getProducts#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllProducts#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllProductsByCategoryId#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCourierById#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListToHistory#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListToHistory#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListNew#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPagination#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationAccepted#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationCompleted#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListNew#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListAccepted#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListAccepted#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListComplete#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#myOrderListComplete#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrderById#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrderByIdWithCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateOrderById#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrdersToMap#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrderConcreteShop#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getGlobalGroups#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getGlobalGroupById#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getGroups#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getShopsWithUndGroups#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getShopsWithUndGroups2#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getShopsWithUndGroups#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getShopsWithUndGroups#2;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getShopsWithUndGroupsForSearch#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getListUndGroups#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationShops#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationShops#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getGroupById#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateGroup#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#delGroup#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateUndGroupPlus#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateUndGroupMinus#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getDebtShops#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationUndGroupsToDebt#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationUndGroups#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationUndGroupsOnGroup#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#update_und_group#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getDebtShopsTopage#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getDebtShopsTopage#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getSizeToPaginationShops#2;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllShopsByGroupsUsId#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllShopsByGroupsUsId#1;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllShopsByGroupsUsId#2;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getShopByid#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#delShop#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#searchShops#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllShopsToAdmin#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateShop#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCompanyById#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#ordersList#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCompaniesToAdmin#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updateCompany#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#removeCompany#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCompaniesAndGroups#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCompanyCategories#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCompanyProducts#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#createNewOrder#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAllShopsToAdminAndroid#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrders#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrdersSelected#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrderByIdToRest#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrderByIdToRestWithCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#selectOrder#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#deselectOrder#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#removeOrder#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#hideOrder#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#order_change_amount#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAcceptedOrdersToCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getCompletedOrdersToCourier#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getOrderWithProducts#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#order_completed#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#getAcceptedOrdersToCourierMap#0;class#MyServiceClass#0" expanded="false" />
-            <element signature="method#updaterows#0;class#MyServiceClass#0" expanded="false" />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select * fro..courier..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select myOrd..myorder..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select myOrd..myorder..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select myOrd..myorder..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE undgr..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE undgr..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select id fr..undgroups..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select id fr..undgroups..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select id fr..undgroups..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="select id fr..shops..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE myord..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE myord..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE myord..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE myord..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE myord..." />
-            <marker date="1554739124332" expanded="true" signature="-1:-1" placeholder="UPDATE shops..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40619308" vertical-offset="2038" max-vertical-offset="2788">
-          <caret line="1052" column="132" selection-start-line="1052" selection-start-column="132" selection-end-line="1052" selection-end-column="132" />
-          <folding>
-            <element signature="method#printWelcome#0;class#HelloController#0" expanded="false" />
-            <element signature="method#sign_ign#0;class#HelloController#0" expanded="false" />
-            <element signature="method#sign_in_admin#0;class#HelloController#0" expanded="false" />
-            <element signature="method#main#0;class#HelloController#0" expanded="false" />
-            <element signature="method#main_admin#0;class#HelloController#0" expanded="false" />
-            <element signature="method#main_admin_get#0;class#HelloController#0" expanded="false" />
-            <element signature="method#allshops#0;class#HelloController#0" expanded="false" />
-            <element signature="method#all_shops_p#0;class#HelloController#0" expanded="false" />
-            <element signature="method#search_added_shop#0;class#HelloController#0" expanded="false" />
-            <element signature="method#shops_from_undgroup#0;class#HelloController#0" expanded="false" />
-            <element signature="method#shops_from_undgroup_p#0;class#HelloController#0" expanded="false" />
-            <element signature="method#couriers#0;class#HelloController#0" expanded="false" />
-            <element signature="method#products#0;class#HelloController#0" expanded="false" />
-            <element signature="method#history#0;class#HelloController#0" expanded="false" />
-            <element signature="method#history#1;class#HelloController#0" expanded="false" />
-            <element signature="method#new_orders#0;class#HelloController#0" expanded="false" />
-            <element signature="method#new_orders#1;class#HelloController#0" expanded="false" />
-            <element signature="method#accepted_orders#0;class#HelloController#0" expanded="false" />
-            <element signature="method#accepted_orders#1;class#HelloController#0" expanded="false" />
-            <element signature="method#complete_orders#0;class#HelloController#0" expanded="false" />
-            <element signature="method#complete_orders#1;class#HelloController#0" expanded="false" />
-            <element signature="method#add_category#0;class#HelloController#0" expanded="false" />
-            <element signature="method#add_product#0;class#HelloController#0" expanded="false" />
-            <element signature="method#add_courier#0;class#HelloController#0" expanded="false" />
-            <element signature="method#add_groups#0;class#HelloController#0" expanded="false" />
-            <element signature="method#add_shops#0;class#HelloController#0" expanded="false" />
-            <element signature="method#add_shops_p#0;class#HelloController#0" expanded="false" />
-            <element signature="e#29669#29678#0" expanded="true" />
-            <element signature="method#get_shop_by_id#0;class#HelloController#0" expanded="false" />
-            <element signature="method#get_shops_by_name#0;class#HelloController#0" expanded="false" />
-            <element signature="method#product_change#0;class#HelloController#0" expanded="false" />
-            <element signature="method#courier_change#0;class#HelloController#0" expanded="false" />
-            <element signature="method#detailsOrder#0;class#HelloController#0" expanded="false" />
-            <element signature="method#detailsAcceptedOrder#0;class#HelloController#0" expanded="false" />
-            <element signature="method#detailsCompletedOrder#0;class#HelloController#0" expanded="false" />
-            <element signature="method#detailsOrderHistory#0;class#HelloController#0" expanded="false" />
-            <element signature="method#get_products_by_categoryId#0;class#HelloController#0" expanded="false" />
-            <element signature="method#orders_in_map#0;class#HelloController#0" expanded="false" />
-            <element signature="method#new_orders_concr_shop#0;class#HelloController#0" expanded="false" />
-            <element signature="method#shop_info#0;class#HelloController#0" expanded="false" />
-            <element signature="method#debt_shops#0;class#HelloController#0" expanded="false" />
-            <element signature="method#debt_shops_p#0;class#HelloController#0" expanded="false" />
-            <element signature="method#admin_shop_info#0;class#HelloController#0" expanded="false" />
-            <element signature="method#admin_add_company#0;class#HelloController#0" expanded="false" />
-            <element signature="method#admin_shops#0;class#HelloController#0" expanded="false" />
-            <element signature="method#admin_change_company#0;class#HelloController#0" expanded="false" />
-            <element signature="method#setGroup#0;class#HelloController#0" expanded="false" />
-            <element signature="method#change_category#0;class#HelloController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46182495" vertical-offset="415" max-vertical-offset="1717">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding />
+        <state vertical-scroll-proportion="0.5377856" vertical-offset="0" max-vertical-offset="2397">
+          <caret line="123" column="39" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="39" />
         </state>
       </provider>
     </entry>
