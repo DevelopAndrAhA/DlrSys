@@ -28,6 +28,8 @@
         </form>
     </div>
 </div>
+
+
 <script type="text/javascript" src="resources/js/jquery-3.0.0.min.js"></script>
 
 </body>
