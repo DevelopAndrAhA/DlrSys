@@ -705,6 +705,4 @@ public class MyRestControllerToAndroid {
 
 
 
-
-
 }

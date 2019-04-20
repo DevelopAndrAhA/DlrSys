@@ -773,8 +773,15 @@ public class HelloController {
 				model.addAttribute("activePageNumber", Integer.valueOf(page));
 				model.addAttribute("group", true);
 			}else{
-				shops = myServiceClass.getAllShopsByGroupsUsId(1);
-				int sizeToPagination = myServiceClass.getSizeToPaginationShops(1);
+				int tmpGroup_id = 1;
+				if(group_id!=null||group_id.length()!=0||!group_id.equals("")){
+					int first = Integer.valueOf(page)*30-30;
+					shops = myServiceClass.getAllShopsByGroupsUsId(Integer.valueOf(group_id),first);
+					tmpGroup_id = Integer.valueOf(group_id);
+				}else{
+					shops = myServiceClass.getAllShopsByGroupsUsId(1);
+				}
+				int sizeToPagination = myServiceClass.getSizeToPaginationShops(tmpGroup_id);
 				int pages = sizeToPagination%30;
 				boolean pagesEnd = false;
 				if(pages!=0){
@@ -785,7 +792,7 @@ public class HelloController {
 				model.addAttribute("sizeToPagination", sizeToPagination/30);
 				model.addAttribute("pagesEnd", pagesEnd);
 				model.addAttribute("activePageNumber", Integer.valueOf(page));
-				model.addAttribute("group", false);
+				model.addAttribute("group", pagesEnd);
 			}
 
 			String group_usName = null;
@@ -837,7 +844,11 @@ public class HelloController {
 				model.addAttribute("activePageNumber", 0);
 				model.addAttribute("group", true);
 			}else{
-				shops = myServiceClass.getAllShopsByGroupsUsId(1);
+				if(group_id!=null||group_id.length()!=0||!group_id.equals("")){
+					shops = myServiceClass.getAllShopsByGroupsUsId(Integer.valueOf(group_id));
+				}else{
+					shops = myServiceClass.getAllShopsByGroupsUsId(1);
+				}
 				int sizeToPagination = myServiceClass.getSizeToPaginationShops(Integer.valueOf(group_id));
 				int pages = sizeToPagination%30;
 				boolean pagesEnd = false;

@@ -668,6 +668,14 @@ public class MyServiceClass {
         List<Shops> list = criteria.list();
         return list;
     }
+    public List<Shops> getAllShopsByGroupsUsId(int groupsUs,int first){
+        Criteria criteria = session.getCurrentSession().createCriteria(Shops.class);
+        criteria.add(Restrictions.eq("groupsus.id", groupsUs));
+        criteria.setMaxResults(30);
+        criteria.setFirstResult(first);
+        List<Shops> list = criteria.list();
+        return list;
+    }
     public List<Shops> getAllShopsByGroupsUsId(int groupsUs,List<Integer> shopsId,int first){
         Criteria criteria = session.getCurrentSession().createCriteria(Shops.class);
         criteria.add(Restrictions.eq("groupsus.id", groupsUs));
@@ -967,22 +975,8 @@ public class MyServiceClass {
         /*SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("UPDATE myorder SET status = 'completed' WHERE status = 'accepted' or status='new' ");
         sqlQuery.executeUpdate();*/
 
-        /*for(int i =0;i<234;i++){
-            Shops shops = new Shops();
-            GroupsUs groupsUs = new GroupsUs();
-            groupsUs.setId(1);
-            shops.setGroupsus(groupsUs);
-            shops.setName("advsadv" + i);
-            shops.setLogin("advsadv" + i);
-            shops.setPassword("advsadv" + i);
-            shops.setPhone("advsadv" + i);
-            shops.setAddress("advsadv" + i);
-            shops.setLatitude("advsadv" + i);
-            shops.setLongitude("advsadv" + i);
-            session.getCurrentSession().save(shops);
-        }*/
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("UPDATE shops SET shop_group_us_id = 3 where id between 100 and 200");
-        sqlQuery.executeUpdate();
+        /*SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("UPDATE shops SET shop_group_us_id = 3 where id between 100 and 200");
+        sqlQuery.executeUpdate();*/
 
 
     }
