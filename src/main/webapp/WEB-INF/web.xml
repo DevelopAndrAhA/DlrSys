@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-	<display-name>Spring MVC Application</display-name>
+	<display-name>Dealer</display-name>
 
 	<servlet>
 		<servlet-name>mvc-dispatcher</servlet-name>
@@ -49,10 +49,21 @@
 		</init-param>
 		<init-param>
 			<param-name>forceEncoding</param-name>
-			<param-value>true</param-value>
+			<param-value>false</param-value>
 		</init-param>
 	</filter>
-
+	<!--<filter>
+		<filter-name>FormEncodingSetterFilter</filter-name>
+		<filter-class>com.springapp.mvc.FormEncodingSetterFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>FormEncodingSetterFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>-->
 	<filter-mapping>
 		<filter-name>characterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
